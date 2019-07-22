@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1" />
+<title>Insert title here</title>
+</head>
+<body>
+	<h1 th:text="${'hiii students'}">WELCOME</h1>
+	<h3 th:text="#{welcome.msg}">display</h3>
+	<h2 th:text="#{ganesh.msg}">suseee</h2>
+	<img th:attr="src=@{/images/sai.jpg}" />
+
+
+	<div th:object="${employee}">
+		<div th:text="*{eno}"></div>
+		<div th:text="*{name}"></div>
+		<div th:text="*{salary}"></div>
+	</div>
+
+
+
+
+
+</body>
+</html>
