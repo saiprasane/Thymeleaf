@@ -13,6 +13,8 @@ public class EmployeeController {
 
 		Employee employee = new Employee(1, "Sai", 12000d);
 		model.addAttribute("employee", employee);
+		
+		System.out.println("One message added!!");
 
 		return "one";
 	}
